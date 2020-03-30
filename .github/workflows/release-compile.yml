@@ -1,0 +1,10 @@
+name: Auto-Compile
+on: release
+jobs:
+  compile:
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Automatically build action
+        use: mheap/github-action-auto-compile-node@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
