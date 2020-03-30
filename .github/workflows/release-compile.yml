@@ -1,5 +1,7 @@
 name: Auto-Compile
-on: release
+on: 
+  release:
+    types: [prerelease]
 jobs:
   compile:
     runs-on: ubuntu-16.04
