@@ -9,6 +9,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Automatically build action
-        uses: mheap/github-action-auto-compile-node@master
+        uses: JasonEtco/github-action-auto-compile-node@custom-entrypoint
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
